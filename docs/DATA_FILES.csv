@@ -11,8 +11,8 @@ main_figure_4,Figs_CTP/Plot_data/main_figure_4/network_values.csv,5095,80,networ
 main_figure_4,Figs_CTP/Plot_data/main_figure_4/statistics.csv,2079,14,metric; environment; state; wall_axis; source_panel_family; statistic_kind; n; mean; ci_low; ci_high; p_display; adjustment; test_alternative
 main_figure_5,Figs_CTP/Plot_data/main_figure_5/group_summary.csv,30429,220,environment; length_cm; session; population; module; metric; group_mean; sd_across_networks; n_networks; sem_across_networks; ci95_low; ci95_high
 main_figure_5,Figs_CTP/Plot_data/main_figure_5/network_values.csv,143753,1760,network_id; environment; length_cm; session; population; module; metric; network_mean; network_cell_sd; n_cells
-main_figure_6,Figs_CTP/Plot_data/main_figure_6/group_curves.csv,11752,80,condition_label; session; metric; mean; sd_networks; n_networks; minimum; maximum; min_valid_cells; max_valid_cells; t95_halfwidth
-main_figure_6,Figs_CTP/Plot_data/main_figure_6/network_curves.csv,21789,320,condition_label; condition; network_id; session; metric; n_cells_finite; n_cells_total; network_mean
+main_figure_6,Figs_CTP/Plot_data/main_figure_6/endpoint_effects.csv,2107,6,condition; pathway; metric; session; n_paired_networks; control_mean; blockade_mean; mean_paired_difference; sd_paired_difference; ci95_low; ci95_high; ci_type; df; paired_t; p_two_sided_unadjusted; p_value_usage
+main_figure_6,Figs_CTP/Plot_data/main_figure_6/network_curves.csv,24581,320,condition_label; condition; network_id; session; metric; n_cells_finite; n_cells_total; n_subgroups; network_mean
 supp_figure_1,Figs_CTP/Plot_data/supp_figure_1/geometry.json,265,,top-level keys: boundary_zone_m; centre_fraction; panels
 supp_figure_1,Figs_CTP/Plot_data/supp_figure_1/positions.csv,958642,20000,panel; frame; x_m; y_m
 supp_figure_1,Figs_CTP/Plot_data/supp_figure_1/segments.csv,1383,60,panel; start_frame; stop_frame_exclusive; direction

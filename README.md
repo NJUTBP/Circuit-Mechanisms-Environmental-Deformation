@@ -16,7 +16,7 @@ Code and plotting data for the manuscript submitted to *Communications in Theore
 
 ## Plot the figures
 
-Use Python 3.11. From the repository root:
+Use Python 3.11 or newer. From the repository root:
 
 ```powershell
 python -m venv .venv

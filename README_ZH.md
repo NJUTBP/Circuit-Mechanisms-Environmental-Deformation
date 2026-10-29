@@ -4,7 +4,7 @@
 
 ## 绘图
 
-使用 Python 3.11，在项目根目录运行：
+使用 Python 3.11 及以上版本，在项目根目录运行：
 
 ```powershell
 python -m venv .venv
