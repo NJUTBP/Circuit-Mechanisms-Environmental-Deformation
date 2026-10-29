@@ -1,0 +1,14 @@
+{
+  "source_output_root": "../outputs/independent_networks",
+  "destination_output_root": "../outputs/learning_rates",
+  "experiment_name": "learning_rates",
+  "network_count": 4,
+  "environments": ["compressed_80", "elongated_120"],
+  "trajectory_id": 0,
+  "multipliers": [0.0, 0.25, 0.5, 2.0, 4.0],
+  "max_parallel": 72,
+  "exclusive_nodes": false,
+  "job_cores": 2,
+  "inline_te": false,
+  "retain_raw_activity": true
+}

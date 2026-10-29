@@ -1,0 +1,41 @@
+{
+  "base_config": "config.model.json",
+  "output_root": "../outputs/place_cell_count",
+  "sweep_name": "place-cell-count",
+  "network_count": 4,
+  "trajectory_ids": [0],
+  "stages": ["init", "baseline", "initial_exposure", "familiarization"],
+  "job_cores": 2,
+  "exclusive_nodes": false,
+  "retain_raw_activity": true,
+  "max_parallel": {
+    "init": 24,
+    "audit_init": 6,
+    "baseline": 24,
+    "initial_exposure": 40,
+    "familiarization": 40
+  },
+  "conditions": [
+    {
+      "id": "npc200_delta_fixed",
+      "kind": "place_cells",
+      "n_place": 200,
+      "place_global_inhibition": 1.5,
+      "inhibition_rule": "fixed"
+    },
+    {
+      "id": "npc300_delta_fixed",
+      "kind": "place_cells",
+      "n_place": 300,
+      "place_global_inhibition": 1.5,
+      "inhibition_rule": "fixed"
+    },
+    {
+      "id": "npc400_delta_fixed",
+      "kind": "place_cells",
+      "n_place": 400,
+      "place_global_inhibition": 1.5,
+      "inhibition_rule": "fixed"
+    }
+  ]
+}

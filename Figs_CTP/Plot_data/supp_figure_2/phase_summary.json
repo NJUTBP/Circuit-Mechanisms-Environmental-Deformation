@@ -1,0 +1,47 @@
+{
+  "phase": {
+    "experiment_50": {
+      "low": {
+        "mean": 0.07865626882258064,
+        "sd": 0.1825452228413853,
+        "sem": 0.023183266484134008,
+        "n_cell_condition_axis_rows": 62,
+        "n_unique_cell_rows": 46
+      },
+      "high": {
+        "mean": 0.1186186891946565,
+        "sd": 0.19256597108590245,
+        "sem": 0.016824567011262514,
+        "n_cell_condition_axis_rows": 131,
+        "n_unique_cell_rows": 55
+      }
+    },
+    "30": {
+      "model": {
+        "low": {
+          "mean_of_network_means": 0.18358164431255436,
+          "network_95ci": [
+            0.1420429463634626,
+            0.22512034226164612
+          ],
+          "n_networks": 8,
+          "n_cell_conditions": 4315
+        },
+        "high": {
+          "mean_of_network_means": 0.24188461397953076,
+          "network_95ci": [
+            0.19546407911575497,
+            0.28830514884330655
+          ],
+          "n_networks": 8,
+          "n_cell_conditions": 10085
+        }
+      },
+      "model_high_minus_low": 0.05830296966697639,
+      "model_paired_network_95ci": [
+        -0.012265557702633427,
+        0.12887149703658618
+      ]
+    }
+  }
+}

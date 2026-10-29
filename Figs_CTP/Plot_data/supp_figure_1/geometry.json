@@ -1,0 +1,16 @@
+{
+  "boundary_zone_m": 0.1,
+  "centre_fraction": 0.6,
+  "panels": {
+    "A": {
+      "width_m": 1.0,
+      "height_m": 1.0,
+      "title": "Square"
+    },
+    "B": {
+      "width_m": 0.8,
+      "height_m": 1.0,
+      "title": "Compressed"
+    }
+  }
+}

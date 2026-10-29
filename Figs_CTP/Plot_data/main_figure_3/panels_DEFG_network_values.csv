@@ -1,0 +1,121 @@
+panel,measure,group,module,axis,network_id,value
+D,delta_R_phase,Deformed axis (x),1.0,x,0,0.21666301241363928
+D,delta_R_phase,Undeformed axis (y),1.0,y,0,0.027573231774027786
+D,delta_R_phase,Deformed axis (x),2.0,x,0,0.21277722250655495
+D,delta_R_phase,Undeformed axis (y),2.0,y,0,0.008160039732025833
+D,delta_R_phase,Deformed axis (x),3.0,x,0,0.2601129371938234
+D,delta_R_phase,Undeformed axis (y),3.0,y,0,0.0025480096423962165
+D,delta_R_phase,Deformed axis (x),1.0,x,1,0.23634937869587033
+D,delta_R_phase,Undeformed axis (y),1.0,y,1,0.0187029664338962
+D,delta_R_phase,Deformed axis (x),2.0,x,1,0.26222889120624027
+D,delta_R_phase,Undeformed axis (y),2.0,y,1,0.03958812476431752
+D,delta_R_phase,Deformed axis (x),3.0,x,1,0.20989453476042283
+D,delta_R_phase,Undeformed axis (y),3.0,y,1,0.028854261997906434
+D,delta_R_phase,Deformed axis (x),1.0,x,2,0.2159334833034583
+D,delta_R_phase,Undeformed axis (y),1.0,y,2,-0.013799796541002317
+D,delta_R_phase,Deformed axis (x),2.0,x,2,0.20418442298350784
+D,delta_R_phase,Undeformed axis (y),2.0,y,2,0.010784587296607417
+D,delta_R_phase,Deformed axis (x),3.0,x,2,0.21845297921730641
+D,delta_R_phase,Undeformed axis (y),3.0,y,2,0.014739312913428016
+D,delta_R_phase,Deformed axis (x),1.0,x,3,0.1956071003318939
+D,delta_R_phase,Undeformed axis (y),1.0,y,3,-0.007203290721037634
+D,delta_R_phase,Deformed axis (x),2.0,x,3,0.25131521234730425
+D,delta_R_phase,Undeformed axis (y),2.0,y,3,0.010242988292456767
+D,delta_R_phase,Deformed axis (x),3.0,x,3,0.2412833487392075
+D,delta_R_phase,Undeformed axis (y),3.0,y,3,0.025470313641570683
+D,delta_R_phase,Deformed axis (x),1.0,x,4,0.14701756546045364
+D,delta_R_phase,Undeformed axis (y),1.0,y,4,-0.0037020110277142166
+D,delta_R_phase,Deformed axis (x),2.0,x,4,0.20781542576451653
+D,delta_R_phase,Undeformed axis (y),2.0,y,4,-0.03518106056033784
+D,delta_R_phase,Deformed axis (x),3.0,x,4,0.2051464613003551
+D,delta_R_phase,Undeformed axis (y),3.0,y,4,0.0058926527632201
+D,delta_R_phase,Deformed axis (x),1.0,x,5,0.342600341338472
+D,delta_R_phase,Undeformed axis (y),1.0,y,5,0.016036430184388186
+D,delta_R_phase,Deformed axis (x),2.0,x,5,0.34120934818228105
+D,delta_R_phase,Undeformed axis (y),2.0,y,5,-0.016860864144880968
+D,delta_R_phase,Deformed axis (x),3.0,x,5,0.23807285536265343
+D,delta_R_phase,Undeformed axis (y),3.0,y,5,0.007806307386912782
+D,delta_R_phase,Deformed axis (x),1.0,x,6,0.20373492107506244
+D,delta_R_phase,Undeformed axis (y),1.0,y,6,0.004345369649229498
+D,delta_R_phase,Deformed axis (x),2.0,x,6,0.173803734427408
+D,delta_R_phase,Undeformed axis (y),2.0,y,6,-0.0037219997750054
+D,delta_R_phase,Deformed axis (x),3.0,x,6,0.20144308839379774
+D,delta_R_phase,Undeformed axis (y),3.0,y,6,0.023993651790147483
+D,delta_R_phase,Deformed axis (x),1.0,x,7,0.2116562572727665
+D,delta_R_phase,Undeformed axis (y),1.0,y,7,-0.017863377779515185
+D,delta_R_phase,Deformed axis (x),2.0,x,7,0.23490448820396317
+D,delta_R_phase,Undeformed axis (y),2.0,y,7,-0.024155827446889266
+D,delta_R_phase,Deformed axis (x),3.0,x,7,0.25113051438793205
+D,delta_R_phase,Undeformed axis (y),3.0,y,7,-0.008684387427632133
+E,delta_R_phase,Deformed axis (x),,x,0,0.22985105737133918
+E,delta_R_phase,Undeformed axis (y),,y,0,0.012760427049483278
+E,delta_R_phase,Deformed axis (x),,x,1,0.23615760155417784
+E,delta_R_phase,Undeformed axis (y),,y,1,0.029048451065373387
+E,delta_R_phase,Deformed axis (x),,x,2,0.21285696183475752
+E,delta_R_phase,Undeformed axis (y),,y,2,0.003908034556344372
+E,delta_R_phase,Deformed axis (x),,x,3,0.22940188713946855
+E,delta_R_phase,Undeformed axis (y),,y,3,0.009503337070996605
+E,delta_R_phase,Deformed axis (x),,x,4,0.18665981750844174
+E,delta_R_phase,Undeformed axis (y),,y,4,-0.010996806274943987
+E,delta_R_phase,Deformed axis (x),,x,5,0.30729418162780214
+E,delta_R_phase,Undeformed axis (y),,y,5,0.0023272911421400003
+E,delta_R_phase,Deformed axis (x),,x,6,0.1929939146320894
+E,delta_R_phase,Undeformed axis (y),,y,6,0.008205673888123861
+E,delta_R_phase,Deformed axis (x),,x,7,0.23256375328822057
+E,delta_R_phase,Undeformed axis (y),,y,7,-0.016901197551345528
+F,grid_field_length_cm,Familiar x,,x,0,20.95416666666667
+F,grid_field_length_cm,Familiar x,,x,1,21.129166666666666
+F,grid_field_length_cm,Familiar x,,x,2,21.47083333333333
+F,grid_field_length_cm,Familiar x,,x,3,20.916666666666668
+F,grid_field_length_cm,Familiar x,,x,4,21.220833333333335
+F,grid_field_length_cm,Familiar x,,x,5,21.65833333333333
+F,grid_field_length_cm,Familiar x,,x,6,21.3
+F,grid_field_length_cm,Familiar x,,x,7,21.099999999999998
+F,grid_field_length_cm,Deformed x,,x,0,24.147916666666667
+F,grid_field_length_cm,Deformed x,,x,1,24.581249999999997
+F,grid_field_length_cm,Deformed x,,x,2,24.52777777777778
+F,grid_field_length_cm,Deformed x,,x,3,23.415972222222223
+F,grid_field_length_cm,Deformed x,,x,4,23.358333333333334
+F,grid_field_length_cm,Deformed x,,x,5,24.143749999999997
+F,grid_field_length_cm,Deformed x,,x,6,23.747222222222224
+F,grid_field_length_cm,Deformed x,,x,7,23.62152777777778
+F,grid_field_length_cm,Deformed y,,y,0,21.75486111111111
+F,grid_field_length_cm,Deformed y,,y,1,22.094444444444445
+F,grid_field_length_cm,Deformed y,,y,2,21.763194444444444
+F,grid_field_length_cm,Deformed y,,y,3,21.93541666666667
+F,grid_field_length_cm,Deformed y,,y,4,21.688194444444445
+F,grid_field_length_cm,Deformed y,,y,5,22.704166666666666
+F,grid_field_length_cm,Deformed y,,y,6,22.08888888888889
+F,grid_field_length_cm,Deformed y,,y,7,21.822222222222223
+G,peak_rate_hz,Familiar,,,0,0.5142952920496464
+G,peak_rate_hz,Familiar,,,1,0.5131919520596663
+G,peak_rate_hz,Familiar,,,2,0.5113626791536808
+G,peak_rate_hz,Familiar,,,3,0.5134669992327691
+G,peak_rate_hz,Familiar,,,4,0.5112448647618294
+G,peak_rate_hz,Familiar,,,5,0.5064576519032319
+G,peak_rate_hz,Familiar,,,6,0.5089221030970414
+G,peak_rate_hz,Familiar,,,7,0.509720926831166
+G,peak_rate_hz,Deformation,,,0,0.4492183911386463
+G,peak_rate_hz,Deformation,,,1,0.4466442044410441
+G,peak_rate_hz,Deformation,,,2,0.4442999940448337
+G,peak_rate_hz,Deformation,,,3,0.44625700433221127
+G,peak_rate_hz,Deformation,,,4,0.4498349127835698
+G,peak_rate_hz,Deformation,,,5,0.439322644977106
+G,peak_rate_hz,Deformation,,,6,0.44521219607028695
+G,peak_rate_hz,Deformation,,,7,0.4425444328950511
+G,mean_rate_hz,Familiar,,,0,0.10136492734154062
+G,mean_rate_hz,Familiar,,,1,0.10121862544367706
+G,mean_rate_hz,Familiar,,,2,0.1012695685649911
+G,mean_rate_hz,Familiar,,,3,0.10177952556560432
+G,mean_rate_hz,Familiar,,,4,0.10119872601081924
+G,mean_rate_hz,Familiar,,,5,0.10130957079430418
+G,mean_rate_hz,Familiar,,,6,0.10156431241581831
+G,mean_rate_hz,Familiar,,,7,0.10074121307581659
+G,mean_rate_hz,Deformation,,,0,0.10125042561027736
+G,mean_rate_hz,Deformation,,,1,0.10120340191448723
+G,mean_rate_hz,Deformation,,,2,0.10134877056297326
+G,mean_rate_hz,Deformation,,,3,0.1014266229069067
+G,mean_rate_hz,Deformation,,,4,0.10112132279305817
+G,mean_rate_hz,Deformation,,,5,0.10132361299461784
+G,mean_rate_hz,Deformation,,,6,0.10129314120444982
+G,mean_rate_hz,Deformation,,,7,0.10101641650001204

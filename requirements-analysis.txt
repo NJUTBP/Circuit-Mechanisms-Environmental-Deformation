@@ -1,0 +1,4 @@
+# Use a separate environment from requirements-plot.txt.
+-r codes/run/requirements.txt
+Pillow>=9.4
+tifffile>=2023.7.10

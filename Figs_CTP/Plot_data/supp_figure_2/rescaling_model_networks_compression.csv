@@ -1,0 +1,9 @@
+network_id,direction,model_length_cm,normalized_rescaling,selected_cell_count
+0,compression,70,0.42811355311355304,91
+1,compression,70,0.4525462962962962,108
+2,compression,70,0.42176870748299317,98
+3,compression,70,0.5253496503496502,143
+4,compression,70,0.42543859649122806,133
+5,compression,70,0.415625,40
+6,compression,70,0.4623253493013972,167
+7,compression,70,0.3920765027322404,61

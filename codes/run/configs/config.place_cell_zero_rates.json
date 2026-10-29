@@ -1,0 +1,15 @@
+{
+  "source_output_root": "../outputs/place_cell_count",
+  "destination_output_root": "../outputs/place_cell_zero_rates",
+  "experiment_name": "place_cell_zero_rates",
+  "place_cell_counts": [200, 300, 400],
+  "network_count": 4,
+  "environments": ["compressed_80", "elongated_120"],
+  "trajectory_id": 0,
+  "multipliers": [0.0],
+  "max_parallel": 72,
+  "job_cores": 2,
+  "exclusive_nodes": false,
+  "retain_raw_activity": true,
+  "inline_te": false
+}

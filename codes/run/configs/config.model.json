@@ -1,0 +1,240 @@
+{
+  "schema_version": 1,
+  "experiment_name": "independent_networks",
+  "master_seed": 20260906,
+  "n_networks": 8,
+  "project_root": "../../..",
+  "data_root": "../../../../Remapping",
+  "output_root": "../outputs/independent_networks",
+  "inputs": {
+    "grid_indices": "square/gc_indices_1.npy"
+  },
+  "trajectory": {
+    "source": "generated",
+    "mean_speed_m_s": 0.2
+  },
+  "model": {
+    "n_boundary": 100,
+    "n_place": 100,
+    "n_grid": 64,
+    "bvc_inputs_per_place": 3,
+    "dt_s": 0.001,
+    "duration_s": 1000.0,
+    "record_every_steps": 10,
+    "plasticity_every_steps": 10,
+    "warmup_steps": 10000,
+    "warmup_velocity": [0.0, 0.0],
+    "grid_warmup_velocity_mode": "seeded_small",
+    "grid_warmup_velocity_max": 0.01,
+    "progress_every_steps": 100000,
+    "tau_grid_s": 0.005,
+    "tau_place_s": 0.01,
+    "grid_kernel_shift": 2,
+    "grid_kernel_wavelength": 11.0,
+    "grid_kernel_gamma_ratio": 1.1,
+    "grid_kernel_centre_gain": 1.015,
+    "grid_velocity_gains": [0.1, 0.07, 0.05],
+    "grid_orientations_deg": [15.0, -15.0, -10.0],
+    "grid_velocity_rotations_deg": [-15.0, 15.0, -10.0],
+    "grid_initialization": "three_point_seeded_background",
+    "initial_grid_background_max": 0.01,
+    "grid_parameter_source": "reviewer revision: each module starts with unit activation at (32,15), (32,32), (32,49); independent seeded background U[0,0.01); seeded warm-up velocities U(-0.01,0.01); explicit velocity rotations [-15,15,-10] deg",
+    "bvc_tuning": {
+      "source": "generated_per_network",
+      "distance_scale": 1.0,
+      "distance": {
+        "distribution": "truncnorm",
+        "a": 1.0,
+        "b": 2.0,
+        "loc_m": -0.5,
+        "scale_m": 0.5
+      },
+      "angle": {
+        "distribution": "uniform",
+        "low_deg": 0.0,
+        "high_deg": 360.0
+      },
+      "angular_width": {
+        "distribution": "uniform",
+        "low_deg": 10.0,
+        "high_deg": 30.0
+      },
+      "radial_width": {
+        "distribution": "diverging",
+        "xi_m": 0.08,
+        "beta": 12.0
+      }
+    },
+    "bvc_drive_gain": 1.0,
+    "grid_to_place_gain": 1.0,
+    "place_threshold": 1.0,
+    "place_inhibition_mode": "linear",
+    "place_global_inhibition": 1.5,
+    "target_place_sparsity": 0.05,
+    "place_activity_floor": 0.001,
+    "initial_weight_gamma": {
+      "shape": 1.0,
+      "scale": 1.0
+    },
+    "initial_weight_multipliers": {
+      "place_recurrent": 0.00002,
+      "grid_to_place": 0.00002,
+      "place_to_grid": 0.000002
+    },
+    "learning_rates": {
+      "bvc_to_place": 0.0001,
+      "grid_to_place": 0.000003,
+      "place_to_grid": 0.000001,
+      "place_recurrent": 0.00002
+    },
+    "normalization": {
+      "bvc_to_place_incoming": 6.0,
+      "grid_to_place_incoming": 3.0,
+      "place_to_grid_incoming": 0.03,
+      "place_to_grid_max_outgoing": 1.8,
+      "place_recurrent_incoming": 3.0,
+      "place_recurrent_max_single": null
+    }
+  },
+  "environments": [
+    {"id": "compressed_70", "width_m": 0.7, "height_m": 1.0, "deformation_axis": "x"},
+    {"id": "compressed_80", "width_m": 0.8, "height_m": 1.0, "deformation_axis": "x"},
+    {"id": "compressed_90", "width_m": 0.9, "height_m": 1.0, "deformation_axis": "x"},
+    {"id": "fam_100", "width_m": 1.0, "height_m": 1.0, "role": "baseline", "deformation_axis": "x"},
+    {"id": "elongated_110", "width_m": 1.1, "height_m": 1.0, "deformation_axis": "x"},
+    {"id": "elongated_120", "width_m": 1.2, "height_m": 1.0, "deformation_axis": "x"},
+    {"id": "elongated_130", "width_m": 1.3, "height_m": 1.0, "deformation_axis": "x"}
+  ],
+  "initialization": {
+    "sessions": 6,
+    "plasticity": {
+      "bvc_to_place": 1.0,
+      "grid_to_place": 1.0,
+      "place_to_grid": 1.0,
+      "place_recurrent": 1.0
+    }
+  },
+  "evaluation": {
+    "trajectory_ids": [0, 1]
+  },
+  "initial_exposure": {
+    "retain_raw_activity": true,
+    "environments": [
+      "compressed_70",
+      "compressed_80",
+      "compressed_90",
+      "elongated_110",
+      "elongated_120",
+      "elongated_130"
+    ]
+  },
+  "familiarization": {
+    "sessions": 9,
+    "environments": ["compressed_80", "elongated_120"],
+    "trajectory_mode": "single",
+    "trajectory_ids": [0],
+    "reuse_trajectories_across_sessions": false,
+    "reuse_initial_exposure_trajectories": false,
+    "plasticity_variants": [
+      {
+        "id": "intact",
+        "multipliers": {
+          "bvc_to_place": 1.0,
+          "grid_to_place": 1.0,
+          "place_to_grid": 1.0,
+          "place_recurrent": 0.0
+        }
+      }
+    ]
+  },
+  "analysis": {
+    "legacy_function_dir": "codes/analysis/main_run_prev/analysis",
+    "rate_map_bin_m": 0.025,
+    "rate_map_sigma_bins": 1.5,
+    "place_field_rate_map_sigma_bins": 2.0,
+    "place_min_rate_hz": 0.1,
+    "place_field_peak_fraction": 0.2,
+    "grid_field_autocorr_threshold": 0.1,
+    "correlation_min_overlap_bins": 20,
+    "grid_nominal_scales_cm": [36.9, 54.1, 76.8],
+    "measure_grid_spacing": true,
+    "boundary_threshold_cm": 10.0,
+    "movement_angle_range_deg": 45.0,
+    "movement_min_speed_cm_s": 10.0,
+    "phase_bootstrap": {
+      "grid_x": 100,
+      "grid_y": 100,
+      "place": 1
+    },
+    "phase_spacing_fallback_to_nominal": false,
+    "spatial_information_min_occupancy_fraction": 0.0001,
+    "rescale_scale_range_cm": 10.0,
+    "rescale_scale_step_cm": 2.5,
+    "rescale_mode": "valid",
+    "rescale_min_overlap_ratio": 0.5,
+    "grid_sample": {
+      "mode": "seeded_shared",
+      "n_cells": 100
+    },
+    "te": {
+      "enabled": false,
+      "environments": ["fam_100", "compressed_80", "elongated_120"],
+      "familiarization_sessions": [],
+      "embeddings": ["pca", "umap"],
+      "pca_components": 10,
+      "pca_fit_max_samples": 50000,
+      "umap_fit_max_samples": 20000,
+      "umap_n_neighbors": 30,
+      "umap_min_dist": 0.1,
+      "residual_ridge": 0.001,
+      "lag_frames": [1, 5, 10, 25],
+      "source_history": [1, 2],
+      "target_history": [1, 2],
+      "n_bins": 5,
+      "n_shuffles": 100,
+      "n_jobs": 8,
+      "cross_trajectory_null": true,
+      "boundary_zone_m": 0.1,
+      "centre_fraction": 0.6,
+      "minimum_segment_frames": 20
+    }
+  },
+  "storage": {
+    "raw_activity": "selective",
+    "raw_activity_selection": {
+      "network_ids": "all",
+      "stages": {
+        "baseline": {
+          "environments": ["fam_100"],
+          "sessions": [0]
+        },
+        "initial_exposure": {
+          "environments": "all",
+          "sessions": [0]
+        },
+        "familiarization": {
+          "environments": ["compressed_80", "elongated_120"],
+          "sessions": "all"
+        }
+      }
+    },
+    "qa_network_ids": [0],
+    "compress_trajectories": true,
+    "compress_rate_maps": true
+  },
+  "statistics": {
+    "bootstrap_draws": 10000
+  },
+  "upstream_reuse": {
+    "enabled": false,
+    "stages": ["init", "baseline"],
+    "reason": "The seeded grid initialization and velocity rotations require a fresh run; no earlier checkpoint may be reused."
+  },
+  "slurm": {
+    "max_parallel_init": 8,
+    "max_parallel_baseline": 8,
+    "max_parallel_initial_exposure": 56,
+    "max_parallel_familiarization": 16,
+    "exclusive_nodes": false
+  }
+}

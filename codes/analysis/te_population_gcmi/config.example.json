@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "random_seed": 20260909,
+  "data": {
+    "manifest_path": "examples/manifest.example.csv",
+    "expected_dt_s": 0.01,
+    "array_keys": {
+      "positions": "positions",
+      "place": "place_activity",
+      "grid_modules": {
+        "module_1": "grid_module_1",
+        "module_2": "grid_module_2",
+        "module_3": "grid_module_3"
+      },
+      "bvc": "bvc_activity"
+    },
+    "require_bvc": false,
+    "allow_nonfinite": false,
+    "dt_relative_tolerance": 0.000001,
+    "minimum_trajectories_per_group": 2
+  },
+  "baseline": {
+    "stage": "baseline",
+    "environment": "fam_100",
+    "session": 0
+  },
+  "segmentation": {
+    "source": "classify",
+    "boundary_zone_m": 0.1,
+    "centre_fraction": 0.6,
+    "minimum_segment_frames": 32,
+    "maximum_segment_frames": null,
+    "minimum_monotonic_fraction": 0.0,
+    "minimum_path_length_m": 0.0,
+    "wall_tie_tolerance_m": 1e-09
+  },
+  "representation": {
+    "primary_components": 10,
+    "sensitivity_components": [3, 5],
+    "pca_fit_max_samples": 50000
+  },
+  "conditioning": {
+    "primary": "behavior_conditioned",
+    "branches": ["behavior_conditioned", "unconditioned"],
+    "position_rbf_grid": 5,
+    "position_rbf_width": 0.3,
+    "speed_polynomial_degree": 3,
+    "ridge": 0.01,
+    "include_bvc_sensitivity": false,
+    "bvc_components": 10
+  },
+  "te": {
+    "primary_estimator": "gaussian_copula",
+    "effect_value": "te_raw_bits",
+    "compute_cv_score": true,
+    "lag_frames": [1, 2, 5, 10, 25],
+    "source_history_frames": [1, 2],
+    "target_history_frames": [1, 2],
+    "covariance_shrinkage": 0.05,
+    "regression_ridge": 0.001,
+    "bias_shuffles": 200,
+    "sensitivity_bias_shuffles": 0,
+    "minimum_shift_frames": 5,
+    "minimum_pool_samples": 1000,
+    "minimum_effective_samples_per_dimension": 20,
+    "autocorrelation_max_lag": 100,
+    "select_parameters_on_baseline": true,
+    "selection_value": "te_cv_bits"
+  },
+  "cross_trajectory_null": {
+    "enabled": true,
+    "repetitions": 100,
+    "randomize_within_caliper": true,
+    "length_tolerance_fraction": 0.5,
+    "match_caliper_sd": 3.0
+  },
+  "statistics": {
+    "independent_unit": "network_id",
+    "primary_targets": [
+      {
+        "stage": "initial_exposure",
+        "environment": "compressed_80",
+        "session": 0
+      },
+      {
+        "stage": "initial_exposure",
+        "environment": "elongated_120",
+        "session": 0
+      }
+    ],
+    "primary_module_aggregation": "mean",
+    "bootstrap_draws": 10000,
+    "confidence_level": 0.95,
+    "exact_sign_flip_max_networks": 20,
+    "monte_carlo_sign_flips": 100000,
+    "primary_multiplicity": "holm",
+    "sensitivity_multiplicity": "max_t"
+  },
+  "execution": {
+    "run_primary": true,
+    "run_sensitivity": true,
+    "write_intermediate_scores": true,
+    "fail_on_qc": true
+  }
+}

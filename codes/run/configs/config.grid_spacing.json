@@ -1,0 +1,43 @@
+{
+  "base_config": "config.model.json",
+  "output_root": "../outputs/grid_spacing",
+  "sweep_name": "grid-spacing",
+  "network_count": 4,
+  "trajectory_ids": [0],
+  "stages": ["init", "baseline", "initial_exposure"],
+  "job_cores": 2,
+  "exclusive_nodes": false,
+  "retain_raw_activity": true,
+  "max_parallel": {
+    "init": 16,
+    "audit_init": 4,
+    "baseline": 16,
+    "initial_exposure": 32
+  },
+  "conditions": [
+    {
+      "id": "alpha1_0p08",
+      "kind": "grid_velocity_gains",
+      "alpha_1": 0.08,
+      "grid_velocity_gains": [0.08, 0.056, 0.04]
+    },
+    {
+      "id": "alpha1_0p09",
+      "kind": "grid_velocity_gains",
+      "alpha_1": 0.09,
+      "grid_velocity_gains": [0.09, 0.063, 0.045]
+    },
+    {
+      "id": "alpha1_0p11",
+      "kind": "grid_velocity_gains",
+      "alpha_1": 0.11,
+      "grid_velocity_gains": [0.11, 0.077, 0.055]
+    },
+    {
+      "id": "alpha1_0p12",
+      "kind": "grid_velocity_gains",
+      "alpha_1": 0.12,
+      "grid_velocity_gains": [0.12, 0.084, 0.06]
+    }
+  ]
+}
